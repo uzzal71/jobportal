@@ -1,8 +1,9 @@
 import React from 'react'
+import { Home } from './components/Home/Home';
 
 const HomagePage = () => {
   return (
-    <div className='text-9xl text-red-500'>HomagePage</div>
+    <Home />
   )
 }
 
