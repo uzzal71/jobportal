@@ -2,7 +2,7 @@ import { Job } from '@/data';
 import Image from 'next/image';
 import React from 'react'
 import { BiMoney } from 'react-icons/bi';
-import { FaMapLocation } from 'react-icons/fa6';
+import { FaMapLocation, FaRegBookmark } from 'react-icons/fa6';
 
 interface Props {
     job: Job;
@@ -34,6 +34,9 @@ const JobCard = ({ job }: Props) => {
                 <div className="text-[10px] sm:text-[14px] text-black text-opacity-80 px-3 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-blue-400">Urgent</div>
             </div>
         </div>
+    </div>
+    <div className="absolute top-[1rem] right-[1rem]">
+        <FaRegBookmark className="w-[1rem] h-[1rem]"/>
     </div>
 </div>
   )
